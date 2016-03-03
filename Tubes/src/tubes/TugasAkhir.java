@@ -7,8 +7,22 @@ package tubes;
 
 /**
  *
- * @author Reza Aryadi
+ * @author Fitrah Bima Nusantara
  */
 public class TugasAkhir {
-    
+    private Dosen[] pembimbing = new Dosen[2];
+	private String judul;
+	
+	public TugasAkhir(String judul){
+		this.judul=judul;
+	}
+        public void setPembimbing(Dosen d, int i){
+		pembimbing[i]=d;
+	}
+	public void setJudul(String judul){
+		this.judul=judul;
+	}
+	public String getJudul(){
+		return judul;
+	}
 }

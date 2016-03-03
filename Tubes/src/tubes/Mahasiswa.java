@@ -7,8 +7,15 @@ package tubes;
 
 /**
  *
- * @author Reza Aryadi
+ * @author Fitrah Bima Nusantara
  */
-class Mahasiswa {
-    
+class Mahasiswa extends Orang {
+    private TugasAkhir tugasAkhir;
+	
+	public void createTA(String judul){
+        tugasAkhir = new TugasAkhir(judul);
+    }
+	public void revisiTA(String judul){
+		tugasAkhir.setJudul(judul);
+	}
 }

@@ -10,8 +10,8 @@ package tubes;
  * @author Reza Aryadi
  */
 public class Dosen extends Orang {
-    private KelompokTA[] topikTA = new KelompokTA[];
-    private int nKelompokTA;
+    private KelompokTA[] topikTA = new KelompokTA[10];
+    private int nKelompokTA=1;
     
     public void createKelompokTA(String topik){
         topikTA[nKelompokTA] = new KelompokTA(topik);

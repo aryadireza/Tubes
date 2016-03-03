@@ -12,7 +12,11 @@ package tubes;
 public class KelompokTA {
     private String topik;
 	private Mahasiswa[] anggota = new Mahasiswa[10];
-	private int jumlahAnggota;
+	private int jumlahAnggota=1;
+
+    KelompokTA(String topik) {
+        this.topik=topik;
+    }
 	
 	public void addAnggota(Mahasiswa m){
 		if (this.jumlahAnggota < 10){
@@ -23,5 +27,8 @@ public class KelompokTA {
 	public void removeAnggota(int i){
 		anggota[i]=null;
 	 
+        }
+        public int getJumlahAnggota(){
+            return jumlahAnggota;
         }
 }

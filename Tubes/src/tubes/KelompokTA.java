@@ -11,5 +11,17 @@ package tubes;
  */
 public class KelompokTA {
     private String topik;
-  
+	private Mahasiswa[] anggota = new Mahasiswa[10];
+	private int jumlahAnggota;
+	
+	public void addAnggota(Mahasiswa m){
+		if (this.jumlahAnggota < 10){
+			this.anggota[jumlahAnggota] = m;
+			jumlahAnggota++;}
+		else System.out.println("Jumlah Anggota sudah melebihi batas maksimum!");
+	}
+	public void removeAnggota(int i){
+		anggota[i]=null;
+	 
+        }
 }

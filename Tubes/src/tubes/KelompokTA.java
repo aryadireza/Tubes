@@ -4,28 +4,26 @@
  * and open the template in the editor.
  */
 package tubes;
-
+import java.util.*;
 /**
  *
  * @author Reza Aryadi
  */
 public class KelompokTA {
     private String topik;
-	private Mahasiswa[] anggota = new Mahasiswa[10];
-	private int jumlahAnggota=1;
+	private ArrayList<Mahasiswa> anggota = new ArrayList<>();
+	private int jumlahAnggota=0;
 
     KelompokTA(String topik) {
         this.topik=topik;
     }
 	
 	public void addAnggota(Mahasiswa m){
-		if (this.jumlahAnggota < 10){
-			this.anggota[jumlahAnggota] = m;
-			jumlahAnggota++;}
-		else System.out.println("Jumlah Anggota sudah melebihi batas maksimum!");
-	}
-	public void removeAnggota(int i){
-		anggota[i]=null;
+	anggota.add(m);
+        }
+	
+        public void removeAnggota(int i){
+		anggota.remove(i);
 	 
         }
         public int getJumlahAnggota(){

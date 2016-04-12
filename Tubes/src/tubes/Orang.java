@@ -12,6 +12,15 @@ package tubes;
 public abstract class Orang {
     private String nama;
     private String status;
+    private String NoID;
+
+    public String getNoID() {
+        return NoID;
+    }
+
+    public void setNoID(String NoID) {
+        this.NoID = NoID;
+    }
     
     public void setNama(String nama){
         this.nama=nama;

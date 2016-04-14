@@ -29,4 +29,7 @@ public class KelompokTA {
         public int getJumlahAnggota(){
             return jumlahAnggota;
         }
+        public ArrayList<Mahasiswa> getAnggota(){
+            return anggota;
+        }
 }

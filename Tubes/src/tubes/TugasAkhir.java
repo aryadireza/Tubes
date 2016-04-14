@@ -16,7 +16,7 @@ public class TugasAkhir {
 	public TugasAkhir(String judul){
 		this.judul=judul;
 	}
-        public void setPembimbing(Dosen d, int i){
+        public void setPembimbing(int i, Dosen d){
 		pembimbing.set(i, d);
 	}
 	public void setJudul(String judul){

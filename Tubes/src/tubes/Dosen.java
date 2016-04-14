@@ -13,11 +13,14 @@ public class Dosen extends Orang {
     private ArrayList<KelompokTA> topikTA = new ArrayList<>();
     private int nKelompokTA=0;
 
+    
+    Dosen(){
+        
+    }
     Dosen(String nama, String NoID) {
        super.setNama(nama);
        super.setNoID(NoID);
     }
-    
     public void createKelompokTA(String topik){
         KelompokTA a = new KelompokTA(topik);
         topikTA.add(a);
@@ -42,5 +45,9 @@ public class Dosen extends Orang {
     }
     public String getStatus(){
         return super.getStatus();
+    }
+
+    public ArrayList<KelompokTA> getTopikTA() {
+        return topikTA;
     }
 }

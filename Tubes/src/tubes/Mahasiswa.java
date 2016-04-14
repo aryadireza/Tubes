@@ -16,6 +16,9 @@ class Mahasiswa extends Orang {
         super.setNama(nama);
         super.setNoID(NoID);
     }
+
+    Mahasiswa() {
+        }
 	
 	public void createTA(String judul){
         tugasAkhir = new TugasAkhir(judul);
@@ -42,5 +45,13 @@ class Mahasiswa extends Orang {
     }
     public String getStatus(){
         return super.getStatus();
+    }
+    public void setJudul(String s){
+        tugasAkhir.setJudul(s);
+    }
+   
+
+    void setPembimbing(Dosen a, int fff) {
+        tugasAkhir.setPembimbing(fff,a);
     }
 }

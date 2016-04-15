@@ -9,6 +9,14 @@ Mahasiswa dapat membuat judul tugas akhir, merevisi tugas akhir.
 ===Deskripsi Singkat Penggunaan Aplikasi
 Aplikasi ini ditujukan untuk Mahasiswa dan Dosen.
 Pada halaman login terdapat pilihan untuk Login sebagai Mahasiswa atau Dosen.
-Dosen dapat memilih 4 Menu yaitu, Membuat Kelompok TA, Menambahkan Mahasiswa ke Kelompok TA, Menghapus Mahasiswa dari Kelompok TA, dan Menjadikan dosen sebagai Dosen Pembimbing 1 atau 2.
-Mahasiswa dapat memilih 2 Menu yaitu, Membuat TA dan Merevisi Judul TA.
+
+Dosen dapat memilih 4 Menu yaitu, 
+-Membuat Kelompok TA
+-Menambahkan Mahasiswa ke Kelompok TA
+-Menghapus Mahasiswa dari Kelompok TA
+-Menjadikan dirinya sebagai Dosen Pembimbing 1 atau 2.
+
+Mahasiswa dapat memilih 2 Menu yaitu, 
+-Membuat TA 
+-Merevisi Judul TA
  

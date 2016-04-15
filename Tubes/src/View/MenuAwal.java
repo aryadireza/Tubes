@@ -5,6 +5,8 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Reza Aryadi
@@ -37,6 +39,11 @@ public class MenuAwal extends javax.swing.JFrame {
         jInternalFrame1.setVisible(true);
 
         ButtonLoginDosen.setText("Login sebagai Dosen");
+        ButtonLoginDosen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonLoginDosenActionPerformed(evt);
+            }
+        });
 
         ButtonLoginMahasiswa.setText("Login sebagai Mahasiswa");
 
@@ -58,7 +65,7 @@ public class MenuAwal extends javax.swing.JFrame {
                 .addComponent(ButtonLoginDosen, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ButtonLoginMahasiswa, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(230, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -79,44 +86,34 @@ public class MenuAwal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void ButtonLoginDosenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLoginDosenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonLoginDosenActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuAwal().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonLoginDosen;
     private javax.swing.JButton ButtonLoginMahasiswa;
     private javax.swing.JInternalFrame jInternalFrame1;
     // End of variables declaration//GEN-END:variables
+
+public Object getButtonLoginDosen{
+    return ButtonLoginDosen;
+}
+public Object getButtonLoginMahasiswa{
+    return ButtonLoginMahasiswa;
+}
+
+    public void addListener(ActionListener e){
+    ButtonLoginDosen.addActionListener(e);
+    ButtonLoginMahasiswa.addActionListener(e);
+    
+
+    }
+
+
+
+
+
 }

@@ -5,6 +5,8 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Reza Aryadi
@@ -40,6 +42,11 @@ public class MainMenuDosen extends javax.swing.JFrame {
         jInternalFrame1.setVisible(true);
 
         BuatKelompokTABtn.setText("Buat Kelompok TA");
+        BuatKelompokTABtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuatKelompokTABtnActionPerformed(evt);
+            }
+        });
 
         TambahAnggotaBtn.setText("Tambah Anggota Kelompok TA");
 
@@ -90,40 +97,11 @@ public class MainMenuDosen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainMenuDosen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainMenuDosen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainMenuDosen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainMenuDosen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void BuatKelompokTABtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuatKelompokTABtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BuatKelompokTABtnActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MainMenuDosen().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BuatKelompokTABtn;
@@ -132,4 +110,27 @@ public class MainMenuDosen extends javax.swing.JFrame {
     private javax.swing.JButton TambahAnggotaBtn;
     private javax.swing.JInternalFrame jInternalFrame1;
     // End of variables declaration//GEN-END:variables
+public Object getBuatKelompokTABtn{
+    return BuatKelompokTABtn;
+}
+public Object getHapusAnggotaTABtn{
+    return HapusAnggotaTABtn;
+}
+public Object getJadiDosenPembimbingBtn{
+    return JadiDosenPembimbingBtn;
+}
+public Object getTambahAnggotaBtn{
+    return TambahAnggotaBtn;
+}
+    public void addListener(ActionListener e){
+    BuatKelompokTABtn.addActionListener(e);
+    HapusAnggotaTABtn.addActionListener(e);
+    JadiDosenPembimbingBtn.addActionListener(e);
+    TambahAnggotaBtn.addActionListener(e);
+
+    }
+
+
+
+
 }

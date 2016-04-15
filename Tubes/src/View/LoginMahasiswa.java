@@ -5,6 +5,8 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Reza Aryadi
@@ -131,40 +133,7 @@ public class LoginMahasiswa extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BackBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginMahasiswa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginMahasiswa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginMahasiswa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginMahasiswa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LoginMahasiswa().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackBtn;
@@ -176,4 +145,26 @@ public class LoginMahasiswa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+
+public Object getBackBtn{
+    return BackBtn;
+}
+public Object getLoginBtn{
+    return LoginBtn;
+}
+public String getUsername{
+    return UsernameTextField.getText();
+}
+public String getPassword{
+    return PasswordTextField.getText();
+}
+    public void addListener(ActionListener e){
+    BackBtn.addActionListener(e);
+    LoginBtn.addActionListener(e);
+
+    }
+
+
+
 }

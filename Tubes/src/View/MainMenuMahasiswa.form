@@ -78,11 +78,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Buat Tugas Akhir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BuatTugasAkhirBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="RevisiJudulBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Revisi Judul TA"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RevisiJudulBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="LihatTugasAkhirBtn">
           <Properties>

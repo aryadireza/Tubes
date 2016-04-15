@@ -65,7 +65,7 @@
                   <Component id="ButtonLoginDosen" min="-2" pref="36" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="ButtonLoginMahasiswa" min="-2" pref="35" max="-2" attributes="0"/>
-                  <EmptySpace pref="230" max="32767" attributes="0"/>
+                  <EmptySpace pref="234" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -75,6 +75,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Login sebagai Dosen"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonLoginDosenActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ButtonLoginMahasiswa">
           <Properties>
